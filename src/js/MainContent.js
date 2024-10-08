@@ -3,10 +3,16 @@ import Navbar from "./Navbar";
 function MainContent() {
   return (
     <div className="container">
-      <Navbar />
+      {" "}
+      {/* Wrapper container for the main content */}
+      <Navbar /> {/* Rendering the Navbar component */}
       <div className="main">
-        <h1>Funfacts about React</h1>
+        {" "}
+        {/* Main content section */}
+        <h1>Funfacts about React</h1> {/* Heading for the section */}
         <ul>
+          {" "}
+          {/* List of fun facts about React */}
           <li>
             <span></span>Was first released in 2013
           </li>
@@ -24,10 +30,11 @@ function MainContent() {
             apps
           </li>
         </ul>
-        <img src="Images/project1-bg-img.png"></img>
+        <img src="Images/project1-bg-img.png" alt="Background Image" />{" "}
+        {/* Displaying an image */}
       </div>
     </div>
   );
 }
 
-export default MainContent;
+export default MainContent; // Exporting MainContent component for use in other files

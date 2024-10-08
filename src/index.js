@@ -1,14 +1,15 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import MainContent from "./Project-1/MainContent";
-import "./Project-1/Index.css";
+import MainContent from "./js/MainContent";
+import "./styles/Index.css";
 
 // ------------------------------------- Render Elements on browser -------------------------------------
-const rootElement = document.querySelector("#root");
 
-if (!rootElement) throw new Error("Failed to find the root h1");
+const rootElement = document.querySelector("#root"); // Selecting the root DOM element where React will mount the app
 
-const root = createRoot(rootElement);
+if (!rootElement) throw new Error("Failed to find the root h1"); // Error handling if root element is not found
 
-root.render(<MainContent />);
+const root = createRoot(rootElement); // Initializing the root for rendering React components
+
+root.render(<MainContent />); // Rendering the MainContent component inside the root element
